@@ -45,3 +45,19 @@ grunt.initConfig({
   },
 })
 ```
+
+#### Urls in a file
+
+Urls must be separated by a new line.
+
+```js
+grunt.initConfig({
+  multishot: {
+    default: {
+      temp: '/tmp/multishot/',
+      output: '/tmp/multishot/',
+      file: '/home/user/someurllist.txt'
+    }
+  },
+})
+```

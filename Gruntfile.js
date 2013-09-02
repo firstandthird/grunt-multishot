@@ -6,6 +6,7 @@ module.exports = function(grunt) {
         temp: '/tmp/multishot/',
         output: '/tmp/multishot/',
         url: ['http://google.com', 'http://yahoo.com', 'http://facebook.com', 'http://digg.com', 'http://amazon.com']
+        // file: './node_modules/multishot/example/urls.txt'
       }
     }
   });
