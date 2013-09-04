@@ -1,7 +1,7 @@
 {
   "name": "grunt-multishot",
   "description": "grunt plugin to create screenshots for multiple urls",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/firstandthird/grunt-multishot",
   "repository": {
     "type": "git",
@@ -25,6 +25,6 @@
   ],
   "dependencies": {
     "progress": "~1.0.0",
-    "multishot": "0.0.3"
+    "multishot": "0.0.5"
   }
 }
