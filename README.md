@@ -19,6 +19,14 @@ grunt.loadNpmTasks('grunt-multishot');
 
 ## The "multishot" task
 
+### Dependencies
+
+Multishot makes use of [webkit2png](http://www.paulhammond.org/webkit2png/).
+
+```shell
+brew install webkit2png
+```
+
 ### Overview
 In your project's Gruntfile, add a section named `multishot` to the data object passed into `grunt.initConfig()`.
 
