@@ -56,7 +56,7 @@ grunt.initConfig({
 
 #### Urls in a file
 
-Urls must be separated by a new line.
+Urls must be separated by a new line. Groups can also be used. See the [multishot readme](https://github.com/firstandthird/multishot#text-file-input) for more information.
 
 ```js
 grunt.initConfig({
@@ -69,3 +69,49 @@ grunt.initConfig({
   },
 })
 ```
+### Groups
+
+```js
+grunt.initConfig({
+  multishot: {
+    default: {
+      temp: '/tmp/multishot/',
+      output: '/tmp/multishot/',
+      url: [
+        {
+          group: 'Google',
+          url: 'http://google.com'
+        },
+        {
+          group: 'Yahoo',
+          url: 'http://yahoo.com'
+        }
+      ]
+    }
+  },
+})
+```
+
+### Custom styles
+
+[See here](https://github.com/firstandthird/multishot#custom-styles) for a full list of preset styles.
+
+```js
+grunt.initConfig({
+  multishot: {
+    default: {
+      temp: '/tmp/multishot/',
+      output: '/tmp/multishot/',
+      styles: {
+        background: 'pink',
+        custom: '.url { text-decoration: underline; }'
+      },
+      url: ['http://google.com', 'http://yahoo.com', 'http://facebook.com', 'http://digg.com', 'http://amazon.com']
+    }
+  },
+})
+```
+
+### Advanced options
+
+grunt-multishot supports all of the options available to multishot. [Read the multishot](https://github.com/firstandthird/multishot) for more information.

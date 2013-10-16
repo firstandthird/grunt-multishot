@@ -38,6 +38,14 @@ module.exports = function(grunt) {
 
     options.output = this.data.output;
     options.temp = this.data.temp;
+    options.template = this.data.template;
+    options.styles = this.data.styles;
+    options.prefix = this.data.prefix;
+    options.additional = {
+      width: this.data.screenWidth,
+      height: this.data.screenHeight,
+      agent: this.data.userAgent
+    };
 
     var shot = new Screenshot(urls, options);
 
@@ -51,9 +59,11 @@ module.exports = function(grunt) {
       done();
     });
 
-    shot.on('error', function(err) {
+    shot.on('err', function(err) {
       grunt.log.error(err);
       done();
     });
+
+    shot.start();
   });
 };
