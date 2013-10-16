@@ -25,6 +25,6 @@
   ],
   "dependencies": {
     "progress": "~1.0.0",
-    "multishot": "~0.1.1"
+    "multishot": "~0.3.0"
   }
 }
